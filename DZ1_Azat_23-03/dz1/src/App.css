@@ -1,0 +1,45 @@
+.header {
+    background-color: #bebebe;
+    margin-bottom: 20px;
+}
+
+.header__inner {
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__inner > nav > ul {
+    display: flex;
+    height: 100%;
+    gap: 20px;
+    align-items: center;
+}
+
+.postList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.postCard {
+    width: 200px;
+    height: 100px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #bebebe;
+}
+
+.footer {
+    background-color: #bebebe;
+    margin-top: 20px;
+}
+
+.footer__inner {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
