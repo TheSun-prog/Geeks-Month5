@@ -1,6 +1,7 @@
 import Container from "../../components/Container/Container";
 import {useEffect, useState} from "react";
 import {getRequest, postRequest} from "../../api/fetchPosts";
+import {useNavigate} from "react-router-dom";
 
 
 const AddPost = ({  }) => {
@@ -8,6 +9,7 @@ const AddPost = ({  }) => {
     const [ title, setTitle ] = useState('')
     const [ body, setBody ] = useState('')
     const [ lastId, setLastId ] = useState(101)
+    const navigate = useNavigate()
 
       useEffect(() => {
         getRequest().then((data) => {
@@ -36,6 +38,8 @@ const AddPost = ({  }) => {
         setBody('')
 
         postRequest(json)
+        navigate('/')
+
     }
 
     return(
